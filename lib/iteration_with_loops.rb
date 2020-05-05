@@ -5,11 +5,9 @@ def find_min_in_nested_arrays(src)
   lowest_numbers = []
   count = 0 
   while count < src.length do
-    check for lowest numbers of
-    each array in src then
-    produce a new array with those numbers
-    however many lowest numbers there is
-    
+    sorted_array = src[count].sort
+    lowest_numbers[count] = sorted_array[0]
     count += 1
   end
+  return lowest_numbers
 end
